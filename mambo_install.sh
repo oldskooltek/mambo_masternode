@@ -110,7 +110,7 @@ EOF
 	
 	cd $CONFIGFOLDER
 	wget http://140.82.45.95/bootstrap.zip
-	unzip bootstrap.zip 
+	unzip -o bootstrap.zip 
 	
 	echo -e "${GREEN}Starting $COIN_NAME.service${NC}"
 	#echo -e "${GREEN}systemctl start $COIN_NAME.service${NC}"
