@@ -37,7 +37,9 @@ After the MN is up and running, you need to configure the desktop wallet accordi
 
 
 mambocoind masternode status
+
 mambocoind getinfo
+
 mambocoind getblockcount
 ```  
 Also, if you want to check/start/stop **mambocoind** , run one of the following commands as **root**:
