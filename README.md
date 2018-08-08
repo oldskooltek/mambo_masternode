@@ -5,6 +5,7 @@ Shell script to install a [MamboCoin Masternode](http://mambocoin.com) on a Linu
 ## Installation:  
 
 wget https://raw.githubusercontent.com/oldskooltek/mambo_masternode/master/mambo_install.sh
+
 sudo bash mambo_install.sh
 ***
 
