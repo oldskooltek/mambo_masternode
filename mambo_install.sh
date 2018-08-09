@@ -56,7 +56,7 @@ purgeOldInstallation() {
 	echo -e "${GREEN}* Done${NONE}";
 }
 
-# Based on Zoldar's script
+# Based on MMBcoin WIKI
 function compile_mambocoin() {
 
 	cd $TMP_FOLDER
