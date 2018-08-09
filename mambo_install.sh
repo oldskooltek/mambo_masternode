@@ -33,7 +33,7 @@ port_prompt() {
 	
 	# If we get nothing, set default
 	if [ -z $COIN_PORT ]; then
-		$COIN_PORT = 21410
+		COIN_PORT = 21410
 	fi
 }
 
