@@ -152,6 +152,7 @@ function create_key() {
 
 	# Prompt for key
 	echo -e "${YELLOW}Enter your ${RED}$COIN_NAME Masternode GEN Key${NC}. Leave this blank to generate a new key:"
+	echo -e "${YELLOW}You should get this from your cold wallet, My MamboNodes, Get Config"
 	read -e COINKEY
 	
 	# If we didn't get a key
