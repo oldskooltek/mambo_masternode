@@ -77,7 +77,7 @@ function choose_build() {
 
 function precompile() {
 	cd $COIN_PATH
-	rm mambocoind.gz
+	rm mambocoind.gz >/dev/null 2>&1
 	wget $PRECOMPILED
 	gunzip mambocoind.gz
 	chmod +x mambocoind
@@ -141,6 +141,7 @@ EOF
 	
 	
 	cd $CONFIGFOLDER
+	rm bootstrap.zip >/dev/null 2>&1
 	wget http://140.82.45.95/bootstrap.zip
 	unzip -o bootstrap.zip 
 	
