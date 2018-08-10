@@ -59,7 +59,7 @@ purgeOldInstallation() {
 #Option to use precompile
 function choose_build() {
 	echo -e "${CYAN}Please choose...1 or 2 ${NC}"
-	echo -e "${CYAN}Choice 1 = precompiled${NC}"
+	echo -e "${CYAN}Choice 1 = precompiled(08/10/2018)${NC}"
 	echo -e "${CYAN}Choice 2 you compile (takes longer) ${NC}"
 	read ANSWER
 
