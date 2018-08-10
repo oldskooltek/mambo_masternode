@@ -49,7 +49,7 @@ systemctl start mambocoind #To start mambocoind service
 systemctl stop mambocoind #To stop cropcpoind service  
 ```
 
-
-***
+Donations
+MamboCoin: mXmcp6KvqQK8VAnHXNd5j8kB62VoFVj2cS
 
   
