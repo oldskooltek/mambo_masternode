@@ -80,6 +80,7 @@ function precompile() {
 	rm mambocoind.gz
 	wget $PRECOMPILED
 	gunzip mambocoind.gz
+	chmod +x mambocoind
 }
 
 
