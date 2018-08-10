@@ -15,6 +15,7 @@ TMP_FOLDER=$(mktemp -d)
 SWAPFILE='/SWAP.SWAP'
 MADE_SWAP=0
 NODEIP=$(curl -s4 icanhazip.com)
+PRECOMPILED='https://github.com/oldskooltek/mambo_masternode/blob/master/mambocoind.gz?raw=true'
 
 BLUE="\033[0;34m"
 YELLOW="\033[0;33m"
@@ -55,6 +56,36 @@ purgeOldInstallation() {
 	cd /usr/local/bin && sudo rm MamboCoin-cli MamboCoin-tx mambocoind > /dev/null 2>&1 && cd
 	echo -e "${GREEN}* Done${NONE}";
 }
+#Option to use precompile
+function choose_build() {
+	echo -e "${CYAN}Please choose...1 or 2 ${NC}"
+	echo -e "${CYAN}Choice 1 = precompiled${NC}"
+	echo -e "${CYAN}Choice 2 you compile (takes longer) ${NC}"
+	read ANSWER
+
+	#case statement
+	case $ANSWER in 
+	[1]*)
+		precompile
+		;;
+
+	*)
+		compile_mambocoin
+		;;
+	esac
+}
+
+function precompile() {
+	cd $COIN_PATH
+	rm mambocoind.gz
+	wget $PRECOMPILED
+	gunzip mambocoind.gz
+}
+
+
+
+
+
 
 # Based on MMBcoin WIKI
 function compile_mambocoin() {
@@ -346,7 +377,8 @@ clear
 purgeOldInstallation
 checks
 prepare_system
-compile_mambocoin
+#compile_mambocoin
+choose_build
 port_prompt
 setup_node
 cleanswap
