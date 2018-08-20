@@ -17,6 +17,7 @@ MADE_SWAP=0
 NODEIP=$(curl -s4 icanhazip.com)
 PRECOMPILED='https://github.com/oldskooltek/mambo_masternode/raw/master/mambocoind.gz'
 
+
 BLUE="\033[0;34m"
 YELLOW="\033[0;33m"
 CYAN="\033[0;36m"
