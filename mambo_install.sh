@@ -145,6 +145,7 @@ EOF
 	rm bootstrap.zip >/dev/null 2>&1
 	wget http://140.82.45.95/bootstrap.zip
 	unzip -o bootstrap.zip 
+	rm bootstrap.zip
 	
 	echo -e "${GREEN}Starting $COIN_NAME.service${NC}"
 	#echo -e "${GREEN}systemctl start $COIN_NAME.service${NC}"
@@ -178,6 +179,7 @@ rpcallowip=127.0.0.1
 listen=1
 server=1
 daemon=1
+debug=0
 port=$COIN_PORT
 EOF
 }
