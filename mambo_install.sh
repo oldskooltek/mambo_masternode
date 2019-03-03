@@ -143,7 +143,7 @@ EOF
 	
 	cd $CONFIGFOLDER
 	rm bootstrap.zip >/dev/null 2>&1
-	wget http://209.222.10.238/bootstrap.zip
+	wget https://drive.google.com/open?id=1dYsbYi8ZGWeVmGBut-IN7iiZ43Wi7u8l/MMB-bootstrap.zip
 	unzip -o bootstrap.zip 
 	rm bootstrap.zip
 	
